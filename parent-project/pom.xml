@@ -20,10 +20,10 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <surefire-plugin.version>2.22.1</surefire-plugin.version>
 
-    <quarkus-plugin.version>1.5.0.CR1</quarkus-plugin.version>
-    <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
+    <quarkus-plugin.version>1.4.2.Final</quarkus-plugin.version>
+    <quarkus.platform.artifact-id>quarkus-universe-bom</quarkus.platform.artifact-id>
     <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
-    <quarkus.platform.version>1.5.0.CR1</quarkus.platform.version>
+    <quarkus.platform.version>1.4.2.Final</quarkus.platform.version>
   </properties>
 
   <modules>
@@ -70,4 +70,15 @@
       </plugin>
     </plugins>
   </build>
+  <profiles>
+    <profile>
+      <id>quarkus-1.5.0.CR1</id>
+      <properties>
+        <quarkus-plugin.version>1.5.0.CR1</quarkus-plugin.version>
+        <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
+        <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
+        <quarkus.platform.version>1.5.0.CR1</quarkus.platform.version>
+      </properties>
+    </profile>
+  </profiles>
 </project>
