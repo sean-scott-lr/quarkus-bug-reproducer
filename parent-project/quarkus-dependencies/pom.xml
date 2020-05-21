@@ -10,17 +10,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>quarkus-modules</artifactId>
+    <artifactId>quarkus-dependencies</artifactId>
     <name>Quarkus dependency pom</name>
-    <description>Defines Quarkus version and enabled extensions common to all services</description>
+    <description>Defines enabled extensions common to all services</description>
     <packaging>pom</packaging>
 
     <modules>
         <module>../core</module>
-        <module>../service-a</module>
-        <module>../service-b</module>
     </modules>
-
 
     <dependencies>
         <dependency>
