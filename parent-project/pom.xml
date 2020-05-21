@@ -27,7 +27,7 @@
   </properties>
 
   <modules>
-    <module>quarkus-dependencies</module>
+    <module>quarkus-parent</module>
     <module>quarkus-services</module>
   </modules>
 

@@ -10,13 +10,13 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>quarkus-dependencies</artifactId>
-  <name>Quarkus dependency pom</name>
-  <description>Defines enabled extensions common to all services</description>
+  <artifactId>quarkus-parent</artifactId>
+  <name>Quarkus parent pom</name>
+  <description>Defines enabled extensions common to all services, some used in the core library</description>
   <packaging>pom</packaging>
 
   <modules>
-    <module>../core</module>
+    <module>../quarkus-core</module>
   </modules>
 
   <dependencies>
@@ -24,12 +24,10 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy</artifactId>
     </dependency>
-
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-infinispan-client</artifactId>
     </dependency>
-
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
