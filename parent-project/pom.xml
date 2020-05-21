@@ -3,12 +3,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.lr</groupId>
   <artifactId>parent-project</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>${revision}</version>
   <packaging>pom</packaging>
   <name>parent-project</name>
 
 
   <properties>
+    <revision>1.0.0-SNAPSHOT</revision>
+
     <compiler-plugin.version>3.8.1</compiler-plugin.version>
     <maven.compiler.parameters>true</maven.compiler.parameters>
     <maven.compiler.source>11</maven.compiler.source>
@@ -62,19 +64,17 @@
   </dependencies>
 
   <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>io.quarkus</groupId>
+          <artifactId>quarkus-maven-plugin</artifactId>
+          <version>${quarkus-plugin.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
     <plugins>
-      <plugin>
-        <groupId>io.quarkus</groupId>
-        <artifactId>quarkus-maven-plugin</artifactId>
-        <version>${quarkus-plugin.version}</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>build</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${compiler-plugin.version}</version>
