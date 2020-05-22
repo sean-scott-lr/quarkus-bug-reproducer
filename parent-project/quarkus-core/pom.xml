@@ -2,15 +2,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>parent-project</artifactId>
+    <artifactId>quarkus-parent</artifactId>
     <groupId>com.lr</groupId>
     <version>${revision}</version>
+    <relativePath>../quarkus-parent</relativePath>
   </parent>
 
-  <groupId>com.lr</groupId>
-  <artifactId>core</artifactId>
+  <artifactId>quarkus-core</artifactId>
+  <name>quarkus-core</name>
 
-  <name>core</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
